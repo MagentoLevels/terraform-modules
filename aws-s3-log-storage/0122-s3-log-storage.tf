@@ -50,7 +50,7 @@ locals {
 }
 
 module "aws_s3_bucket" {
-  source = "git::https://github.com/matkovskiy/tf-modules.git//aws-s3-bucket?ref=tags/0.0.45"
+  source = "git::https://github.com/MagentoLevels/terraform-modules.git//aws-s3-bucket?ref=tags/0.0.45"
   # version = "0.49.0"
 
   bucket_name        = local.bucket_name

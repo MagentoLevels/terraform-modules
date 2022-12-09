@@ -31,7 +31,7 @@ locals {
 }
 
 module "aws_security_group" {
-  source = "git::https://github.com/matkovskiy/tf-modules.git//aws-security-group?ref=tags/0.0.43"
+  source = "git::https://github.com/MagentoLevels/terraform-modules.git//aws-security-group?ref=tags/0.0.43"
 #  version = "0.4.3"
 
   enabled = local.create_security_group
@@ -207,7 +207,7 @@ resource "aws_cloudwatch_metric_alarm" "cache_memory" {
 }
 
 module "dns" {
-  source = "git::https://github.com/matkovskiy/tf-modules.git//aws-route53-cluster-hostname?ref=tags/0.0.43"
+  source = "git::https://github.com/MagentoLevels/terraform-modules.git//aws-route53-cluster-hostname?ref=tags/0.0.43"
 #  version = "0.12.2"
 
   enabled  = module.this.enabled && length(var.zone_id) > 0 ? true : false

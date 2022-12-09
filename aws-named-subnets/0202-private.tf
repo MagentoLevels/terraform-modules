@@ -3,7 +3,7 @@ locals {
 }
 
 module "private_label" {
-  source = "git::https://github.com/matkovskiy/tf-modules.git//aws-null-label?ref=tags/0.0.25"
+  source = "git::https://github.com/MagentoLevels/terraform-modules.git//aws-null-label?ref=tags/0.0.25"
 
 
   attributes = ["private"]

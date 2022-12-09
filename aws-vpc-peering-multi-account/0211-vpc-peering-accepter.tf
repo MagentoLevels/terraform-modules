@@ -18,7 +18,7 @@ provider "aws" {
 }
 
 module "accepter" {
-  source = "git::https://github.com/matkovskiy/tf-modules.git//tf-null-label?ref=tags/0.0.40"
+  source = "git::https://github.com/MagentoLevels/terraform-modules.git//tf-null-label?ref=tags/0.0.40"
 
 
   enabled = local.accepter_enabled

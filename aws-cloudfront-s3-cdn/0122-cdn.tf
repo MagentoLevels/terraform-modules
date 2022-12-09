@@ -91,7 +91,7 @@ data "aws_partition" "current" {
 }
 
 module "origin_label" {
-  source = "git::https://github.com/matkovskiy/tf-modules.git//tf-null-label?ref=tags/0.0.40"
+  source = "git::https://github.com/MagentoLevels/terraform-modules.git//tf-null-label?ref=tags/0.0.40"
   # version = "0.25.0"
 
   attributes = var.extra_origin_attributes
@@ -323,7 +323,7 @@ resource "time_sleep" "wait_for_aws_s3_bucket_settings" {
 }
 
 module "logs" {
-  source = "git::https://github.com/matkovskiy/tf-modules.git//aws-s3-log-storage/?ref=tags/0.0.45"
+  source = "git::https://github.com/MagentoLevels/terraform-modules.git//aws-s3-log-storage/?ref=tags/0.0.45"
   # version                  = "0.26.0"
   enabled                  = local.create_cf_log_bucket
   attributes               = var.extra_logs_attributes
@@ -598,7 +598,7 @@ resource "aws_cloudfront_distribution" "default" {
 }
 
 module "dns" {
-  source = "git::https://github.com/matkovskiy/tf-modules.git//aws-route53-alias?ref=tags/0.0.46"
+  source = "git::https://github.com/MagentoLevels/terraform-modules.git//aws-route53-alias?ref=tags/0.0.46"
   # version          = "0.13.0"
   enabled          = (local.enabled && var.dns_alias_enabled)
   aliases          = var.aliases

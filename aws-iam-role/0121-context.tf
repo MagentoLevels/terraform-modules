@@ -21,7 +21,7 @@
 #
 
 module "this" {
-  source = "git::https://github.com/matkovskiy/tf-modules.git//aws-null-label?ref=tags/0.0.42"
+  source = "git::https://github.com/MagentoLevels/terraform-modules.git//aws-null-label?ref=tags/0.0.42"
   #  version = "0.25.0" # requires Terraform >= 0.13.0
 
   enabled             = var.enabled

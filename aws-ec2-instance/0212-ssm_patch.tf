@@ -6,7 +6,7 @@ locals {
 }
 
 module "label_ssm_patch_s3_log_policy" {
-  source = "git::https://github.com/matkovskiy/tf-modules.git//tf-null-label?ref=tags/0.0.40"
+  source = "git::https://github.com/MagentoLevels/terraform-modules.git//tf-null-label?ref=tags/0.0.40"
   # version = "0.25.0"
 
   enabled    = local.ssm_patch_log_bucket_enabled

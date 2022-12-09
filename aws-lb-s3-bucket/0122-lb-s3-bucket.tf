@@ -26,7 +26,7 @@ data "aws_iam_policy_document" "default" {
 }
 
 module "s3_bucket" {
-  source = "git::https://github.com/matkovskiy/tf-modules.git//aws-s3-log-storage?ref=tags/0.0.26"
+  source = "git::https://github.com/MagentoLevels/terraform-modules.git//aws-s3-log-storage?ref=tags/0.0.26"
 
   context                            = module.this.context
   acl                                = var.acl

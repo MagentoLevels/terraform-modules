@@ -83,7 +83,7 @@ resource "aws_iam_user_group_membership" "ses_user" {
 
 
 module "ses_user" {
-  source = "git::https://github.com/matkovskiy/tf-modules.git//aws-iam-system-user?ref=tags/0.0.39"
+  source = "git::https://github.com/MagentoLevels/terraform-modules.git//aws-iam-system-user?ref=tags/0.0.39"
 
   enabled = local.create_user_enabled
 

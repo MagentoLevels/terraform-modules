@@ -1,5 +1,5 @@
 module "final_snapshot_label" {
-  source = "git::https://github.com/matkovskiy/tf-modules.git//aws-null-label?ref=tags/0.0.43"
+  source = "git::https://github.com/MagentoLevels/terraform-modules.git//aws-null-label?ref=tags/0.0.43"
   # version    = "0.25.0"
   attributes = ["final", "snapshot"]
   context    = module.this.context
@@ -198,7 +198,7 @@ resource "aws_security_group_rule" "egress" {
 }
 
 module "dns_host_name" {
-  source = "git::https://github.com/matkovskiy/tf-modules.git//aws-route53-cluster-hostname?ref=tags/0.0.41"
+  source = "git::https://github.com/MagentoLevels/terraform-modules.git//aws-route53-cluster-hostname?ref=tags/0.0.41"
   # version = "0.12.2"
 
   enabled  = length(var.dns_zone_id) > 0 && module.this.enabled

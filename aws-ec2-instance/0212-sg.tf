@@ -1,5 +1,5 @@
 module "security_group" {
-  source = "git::https://github.com/matkovskiy/tf-modules.git//aws-security-group?ref=tags/0.0.36"
+  source = "git::https://github.com/MagentoLevels/terraform-modules.git//aws-security-group?ref=tags/0.0.36"
   #  version = "0.3.3"
 
   use_name_prefix = var.security_group_use_name_prefix
